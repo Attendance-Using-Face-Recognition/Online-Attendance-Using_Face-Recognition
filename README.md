@@ -3,11 +3,14 @@
 - Provide two types of accounts: Students and Faculty.
 - Faculties can train face recognition model on added photos by students, add lectures, take attendance by turn on camera, see and download the attendance, etc.
 - Students can add their photos and see their attendance.
-- This [articles](https://karm216.github.io/Fastpages-Notebooks/fastpages/jupyter/2021/03/25/face_recognization.html) shows Face recognition implementation and results of this project.
-- Compatible Python Version = 3.6.9
+
+## Face recognition pipeline 
+ ![](Attendance.png) <br></br>
+- This [article](https://karm216.github.io/Fastpages-Notebooks/fastpages/jupyter/2021/03/25/face_recognization.html) desribes details of face recognition implementation and results of this project.
 
 ## Steps to run this project:
 ### 1. Create Python virtual environment and install requirements
+Compatible Python Version = 3.6.9
 - Create virtual environment
 ```
 python3.6 -m venv attendance-env
