@@ -128,19 +128,19 @@ def get_slot(time=datetime.now()):
     slot5 = time.replace(hour=16, minute=45, second=0, microsecond=0)
     #slot5 = time.replace(hour=4, minute=25, second=0, microsecond=0)
     if time < start:
-        return 6
+        return 2
     elif time < slot1:
-        return 1
+        return 2
     elif time < slot2:
         return 2
     elif time < slot3:
-        return 3
+        return 2
     elif time < slot4:
-        return 4
+        return 2
     elif time < slot5:
-        return 5
+        return 2
     else:
-        return 6
+        return 2
 
 
 def dataAugmentation(original):

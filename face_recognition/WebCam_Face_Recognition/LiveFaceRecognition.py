@@ -116,10 +116,10 @@ def camera():
 	# loop over the frames from the video stream
 	print("starting video stream...")
 	# capture from PC's Camera
-	# vs = VideoStream(src=0).start()
+	#vs = VideoStream(src=0).start()
 
 	# Capture from Phone's Camera
-	url = "http://192.168.0.104:8080/video"
+	url = "http://192.168.0.103:8080/video"
 	vs = cv2.VideoCapture(url)
 	if not vs:
 		print("camera can not capture frame!")
@@ -133,13 +133,14 @@ def camera():
 		# grab the frame from the threaded video stream and resize it
 		# to have a maximum width of 400 pixels
 
-		# for mobile camera
+		#for mobile camera
 		h, frame = vs.read()
 		frame = imutils.resize(frame, width=360)
 		#for pc camera
 		#frame = vs.read()
 		#frame = imutils.resize(frame, width=720)
-		# grab the frame dimensions and convert it to a blob
+
+		# grab the frame dimensions and convert it to a blob		
 		(h, w) = frame.shape[:2]
 		detections = get_detections(caffe_model,frame)
 		# loop over the detections
@@ -216,7 +217,7 @@ def camera():
 	cv2.destroyAllWindows()
 
 	# for pc camera
-	# vs.stop()
+	#vs.stop()
 	print(attendance_started)
 	print(attendance_marked)
 	# & 0xFF
