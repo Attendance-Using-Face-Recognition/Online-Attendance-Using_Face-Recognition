@@ -1,5 +1,8 @@
 # Online Attendance using Face Recognition
-- Flask based web application to manage attendance using face recognition
+- Flask based web application to take attendance using face recognition.
+- Provide two types of accounts: Students and Faculty.
+- Faculties can train face recognition model on added photos by students, add lectures, take attendance by turn on camera, see and download the attendance, etc.
+- Students can add their photos and see their attendance.
 - Compatible Python Version = 3.6.9
 
 ## Steps to run this project:
@@ -25,6 +28,7 @@ pip install -r requirements.txt
 ```
 python3 run.py
 ```
-This will take 20-30 seconds to load pretrained models and finally give localhost url to run flask application. Then open that url (i.e. - `http://127.0.0.1:5500/`) 
-![alt text](/navbar issue.png?raw=true)
-
+This will take 20-30 seconds to load pretrained models and finally give localhost url to run flask application. Then open that url (i.e. - `http://127.0.0.1:5500/`). 
+By clicking url following home screen should be displayed.
+<br></br>
+![alt text](/Home.png?raw=true)
